@@ -1,46 +1,36 @@
+/*
+id {
+	propiedad: valor;
+}
+*/
 
-/*estilo para una clase (azul)*/
-/*.azul{
-	color: blue;
-}*/
-
-/*estilo para un id (rojo)*/
-/*#rojo{
-	color: pink;
-}*/
-
-/*estilo para una etiqueta (h1)*/
-/*h1{
-	color: grey;
-}*/
-
-/*predomina primero especificar el estilo en el html (inline) luego en id y clases (entre estos predomina lo que pongas mas tarde en el codigo) y por ultimo en etiquetas  */
-body{
+body {
 	text-align: center;
 	font-family: "Roboto";
 }
 
-h1{
+h1 {
 	font-size: 24px;
 }
 
-h2{
+h2 {
 	font-size: 18px;
 	color: #949494;
 	margin-bottom: 209px;
 }
 
-/*posicion absoluta: elimina el orden predeterminado de insercion de los elementos 
-left y top: situan la ESQUINA SUPERIOR IZQUIERDA de nuestra cajita (layout center-screen) en el centro del layout padre (en este caso el body, es decir la pantalla entera)
-transform: translate (-50%,-50%); pone el CENTRO de la cajita en el centro*/
-.center-screen{
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%,-50%);
+a {
+	text-decoration: none;
 }
 
-.green-button{
+.center-screen {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.green-button {
 	width: 144px;
 	height: 36px;
 	background-color: #009688;
@@ -49,9 +39,39 @@ transform: translate (-50%,-50%); pone el CENTRO de la cajita en el centro*/
 	font-size: 14px;
 	color: white;
 	border: none;
-	font-family: "Roboto"; 
-	box-shadow: 0px 2px rgba(0,0,0,0.15);
+	font-family: "Roboto";
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
 	display: block;
 	margin: 0 auto 28px;
+	letter-spacing: 0.0357143em;
+	cursor: pointer;
+}
 
+.input-container {
+
+}
+
+.input-container img {
+	opacity: 0.54;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.input-container input {
+	border: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.45);
+	margin-bottom: 32px;
+	padding-bottom: 7px;
+}
+
+.input-container input::placeholder {
+	color: rgba(0, 0, 0, 0.68);
+}
+
+.title-page {
+	margin-bottom: 48px;
+}
+
+.margin-top {
+	margin-top: 17px;
 }
